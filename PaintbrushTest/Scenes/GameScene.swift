@@ -69,6 +69,7 @@ class GameScene: SKScene {
             n.strokeColor = SKColor.red
             self.drawArea?.addChild(n)
         }
+        verify()
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -86,20 +87,7 @@ class GameScene: SKScene {
     override func keyDown(with event: NSEvent) {
         switch event.keyCode {
         case 0x31:
-            if let drawnLine = makePathFromChildren() {
-                self.drawArea?.addChild(drawnLine)
-                predictLabel?.text = "Generated line from nodes."
-            }
-            if let image = getCanvasImage() {
-                predictLabel?.text = "Captured image from canvas area."
-                predictCanvas?.texture = SKTexture(cgImage: image)
-                if let prediction = try? makePrediction(from: image) {
-                    predictLabel?.text = "Predicted number: \(prediction == -1 ? "Unknown": "\(prediction)")"
-                    if prediction != 6, let line = drawArea?.childNode(withName: "drawnLine") {
-                        line.run(flashAction())
-                    }
-                }
-            }
+            verify()
         case 0x24:
             for node in children where node is SKShapeNode {
                 node.removeFromParent()
@@ -117,6 +105,23 @@ class GameScene: SKScene {
             ]),
             count: 5
         )
+    }
+
+    private func verify() {
+        if let drawnLine = makePathFromChildren() {
+            self.drawArea?.addChild(drawnLine)
+            predictLabel?.text = "Generated line from nodes."
+        }
+        if let image = getCanvasImage() {
+            predictLabel?.text = "Captured image from canvas area."
+            predictCanvas?.texture = SKTexture(cgImage: image)
+            if let prediction = try? makePrediction(from: image) {
+                predictLabel?.text = "Predicted number: \(prediction == -1 ? "Unknown": "\(prediction)")"
+                if prediction != 6, let line = drawArea?.childNode(withName: "drawnLine") {
+                    line.run(flashAction())
+                }
+            }
+        }
     }
 }
 
