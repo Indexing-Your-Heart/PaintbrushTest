@@ -95,6 +95,9 @@ class GameScene: SKScene {
                 predictCanvas?.texture = SKTexture(cgImage: image)
                 if let prediction = try? makePrediction(from: image) {
                     predictLabel?.text = "Predicted number: \(prediction == -1 ? "Unknown": "\(prediction)")"
+                    if prediction != 6, let line = drawArea?.childNode(withName: "drawnLine") {
+                        line.run(flashAction())
+                    }
                 }
             }
         case 0x24:
@@ -103,6 +106,27 @@ class GameScene: SKScene {
             }
         default:
             print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+        }
+    }
+
+    private func flashAction() -> SKAction {
+        .repeat(
+            .sequence([
+                .strokeColor(to: .red, duration: 0.5),
+                .strokeColor(to: .black, duration: 0.5),
+            ]),
+            count: 5
+        )
+    }
+}
+
+extension SKAction {
+    static func strokeColor(to color: SKColor, duration: TimeInterval) -> SKAction {
+        .customAction(withDuration: duration) { node, dur in
+            guard let node = node as? SKShapeNode else { return }
+            if let blendedColor = node.strokeColor.blended(withFraction: dur, of: color) {
+                node.strokeColor = blendedColor
+            }
         }
     }
 }
