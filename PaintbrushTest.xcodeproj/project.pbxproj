@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95E1583A28DDE3C700203A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1583928DDE3C700203A7F /* AppDelegate.swift */; };
+		95E1583C28DDE3C700203A7F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 95E1583B28DDE3C700203A7F /* GameScene.sks */; };
+		95E1583E28DDE3C700203A7F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 95E1583D28DDE3C700203A7F /* Actions.sks */; };
+		95E1584028DDE3C700203A7F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1583F28DDE3C700203A7F /* GameScene.swift */; };
+		95E1584228DDE3C700203A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1584128DDE3C700203A7F /* ViewController.swift */; };
+		95E1584428DDE3C800203A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E1584328DDE3C800203A7F /* Assets.xcassets */; };
+		95E1584728DDE3C800203A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E1584528DDE3C800203A7F /* Main.storyboard */; };
+		95E1585028DDEA8900203A7F /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 95E1584F28DDEA8900203A7F /* Algorithms */; };
+		95E1585228DDEF3300203A7F /* PaintbrushSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1585128DDEF3300203A7F /* PaintbrushSolver.swift */; };
+		95E1585628DDFF8F00203A7F /* MNISTClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 95E1585528DDFF8F00203A7F /* MNISTClassifier.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95E1583628DDE3C700203A7F /* PaintbrushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintbrushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E1583928DDE3C700203A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95E1583B28DDE3C700203A7F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		95E1583D28DDE3C700203A7F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		95E1583F28DDE3C700203A7F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		95E1584128DDE3C700203A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E1584328DDE3C800203A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E1584628DDE3C800203A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95E1584828DDE3C800203A7F /* PaintbrushTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaintbrushTest.entitlements; sourceTree = "<group>"; };
+		95E1585128DDEF3300203A7F /* PaintbrushSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintbrushSolver.swift; sourceTree = "<group>"; };
+		95E1585528DDFF8F00203A7F /* MNISTClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNISTClassifier.mlmodel; sourceTree = "<group>"; };
+		95E1585728DE0A8C00203A7F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95E1583328DDE3C700203A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E1585028DDEA8900203A7F /* Algorithms in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95E1582D28DDE3C700203A7F = {
+			isa = PBXGroup;
+			children = (
+				95E1585728DE0A8C00203A7F /* README.md */,
+				95E1583828DDE3C700203A7F /* PaintbrushTest */,
+				95E1583728DDE3C700203A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95E1583728DDE3C700203A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95E1583628DDE3C700203A7F /* PaintbrushTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95E1583828DDE3C700203A7F /* PaintbrushTest */ = {
+			isa = PBXGroup;
+			children = (
+				95E1585428DDFF6400203A7F /* Predictions */,
+				95E1585328DDFF4C00203A7F /* Scenes */,
+				95E1583928DDE3C700203A7F /* AppDelegate.swift */,
+				95E1584128DDE3C700203A7F /* ViewController.swift */,
+				95E1584328DDE3C800203A7F /* Assets.xcassets */,
+				95E1584528DDE3C800203A7F /* Main.storyboard */,
+				95E1584828DDE3C800203A7F /* PaintbrushTest.entitlements */,
+			);
+			path = PaintbrushTest;
+			sourceTree = "<group>";
+		};
+		95E1585328DDFF4C00203A7F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				95E1583B28DDE3C700203A7F /* GameScene.sks */,
+				95E1583D28DDE3C700203A7F /* Actions.sks */,
+				95E1583F28DDE3C700203A7F /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		95E1585428DDFF6400203A7F /* Predictions */ = {
+			isa = PBXGroup;
+			children = (
+				95E1585528DDFF8F00203A7F /* MNISTClassifier.mlmodel */,
+				95E1585128DDEF3300203A7F /* PaintbrushSolver.swift */,
+			);
+			path = Predictions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95E1583528DDE3C700203A7F /* PaintbrushTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E1584B28DDE3C800203A7F /* Build configuration list for PBXNativeTarget "PaintbrushTest" */;
+			buildPhases = (
+				95E1583228DDE3C700203A7F /* Sources */,
+				95E1583328DDE3C700203A7F /* Frameworks */,
+				95E1583428DDE3C700203A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaintbrushTest;
+			packageProductDependencies = (
+				95E1584F28DDEA8900203A7F /* Algorithms */,
+			);
+			productName = PaintbrushTest;
+			productReference = 95E1583628DDE3C700203A7F /* PaintbrushTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95E1582E28DDE3C700203A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					95E1583528DDE3C700203A7F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 95E1583128DDE3C700203A7F /* Build configuration list for PBXProject "PaintbrushTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95E1582D28DDE3C700203A7F;
+			packageReferences = (
+				95E1584E28DDEA8900203A7F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
+			productRefGroup = 95E1583728DDE3C700203A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95E1583528DDE3C700203A7F /* PaintbrushTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E1583428DDE3C700203A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E1583C28DDE3C700203A7F /* GameScene.sks in Resources */,
+				95E1584428DDE3C800203A7F /* Assets.xcassets in Resources */,
+				95E1583E28DDE3C700203A7F /* Actions.sks in Resources */,
+				95E1584728DDE3C800203A7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95E1583228DDE3C700203A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E1585228DDEF3300203A7F /* PaintbrushSolver.swift in Sources */,
+				95E1584228DDE3C700203A7F /* ViewController.swift in Sources */,
+				95E1584028DDE3C700203A7F /* GameScene.swift in Sources */,
+				95E1583A28DDE3C700203A7F /* AppDelegate.swift in Sources */,
+				95E1585628DDFF8F00203A7F /* MNISTClassifier.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95E1584528DDE3C800203A7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E1584628DDE3C800203A7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95E1584928DDE3C800203A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95E1584A28DDE3C800203A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		95E1584C28DDE3C800203A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaintbrushTest/PaintbrushTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4K7Y69MC5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = art.indexingyourhe.PaintbrushTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		95E1584D28DDE3C800203A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PaintbrushTest/PaintbrushTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4K7Y69MC5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = art.indexingyourhe.PaintbrushTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95E1583128DDE3C700203A7F /* Build configuration list for PBXProject "PaintbrushTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E1584928DDE3C800203A7F /* Debug */,
+				95E1584A28DDE3C800203A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E1584B28DDE3C800203A7F /* Build configuration list for PBXNativeTarget "PaintbrushTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E1584C28DDE3C800203A7F /* Debug */,
+				95E1584D28DDE3C800203A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95E1584E28DDEA8900203A7F /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95E1584F28DDEA8900203A7F /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95E1584E28DDEA8900203A7F /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 95E1582E28DDE3C700203A7F /* Project object */;
+}
